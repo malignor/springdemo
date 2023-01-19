@@ -1,0 +1,13 @@
+2023-01-19
+    (1) I am using community edition which doesn't support Springboot framework or key plugins.
+        Resolved this by going to https://start.spring.io/ to generate a demo project, and creating a new project from-exising-source.
+    (2) When I went through the Maven lifecycle steps, compiling (and later) failed and spat out "package org.testng.annotations does not exist". This is a known issue with IntelliJ.
+        Resolved this by adding the dependency in the POM, and reloading all Maven projects to trigger the download & import.
+        Dependency:
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>6.9.13.6</version>
+                <scope>compile</scope>
+            </dependency>
+        Now it compiles, tests, etc.
