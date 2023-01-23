@@ -13,3 +13,10 @@
         Now it compiles, tests, etc.
     (3) Committed to Github without issue (set up Git beforehand on another project)
     (+) Next, use this to actually create something - a REST API that triggers commands
+2023-01-22
+    (1) Made a basic RESTful API with a /greeting. Worked well.
+    (2) Created a ScheduledTasks class and it works well too.
+    (3) Created a set of classes to be handled by a new API, for profiles and so on. Looks like it works.
+        get works as intended. post need to test with cURL or Postman
+2023-01-23
+    (1) Fixed the addprofile - the issue was an inability to return the password info (no getters)
